@@ -1,0 +1,40 @@
+[project]
+name = "immunity"
+version = "0.1.0"
+description = "Ahead-of-time (AOT) compiled Zsh plugin manager in Python"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "ellainng", email = "299958882+ellainng@users.noreply.github.com" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: System :: Shells",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.scripts]
+immunity = "immunity.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/wispsy/immunity"
+Repository = "https://github.com/wispsy/immunity"
+Issues = "https://github.com/wispsy/immunity/issues"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
