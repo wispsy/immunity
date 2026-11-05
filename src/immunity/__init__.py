@@ -3,6 +3,8 @@
 __version__ = "0.1.0"
 
 from immunity.config import ImmunityConfig
+from immunity.git import resolve_head_commit, run_git, sync_all_plugins, sync_plugin
+from immunity.lockfile import build_lock_data, read_lockfile, write_lockfile
 from immunity.models import PluginLock, PluginSpec
 from immunity.parser import parse_plugin_line, parse_plugins_file, parse_plugins_text
 
@@ -11,7 +13,14 @@ __all__ = [
     "ImmunityConfig",
     "PluginLock",
     "PluginSpec",
+    "build_lock_data",
     "parse_plugin_line",
     "parse_plugins_file",
     "parse_plugins_text",
+    "read_lockfile",
+    "resolve_head_commit",
+    "run_git",
+    "sync_all_plugins",
+    "sync_plugin",
+    "write_lockfile",
 ]
